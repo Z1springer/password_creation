@@ -14,9 +14,9 @@ function writePassword() {
 }
 // Create an array of letters upper and lowercase, numbers, and spec. characters
 var caps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-  lowerCase = 'abcdefghijklmnopqrstuvwxyz',
-  specChar = '!@#$%^&*<>?~-+/=',
-  numbers = '1234567890'
+    lowerCase = 'abcdefghijklmnopqrstuvwxyz',
+    specChar = '!@#$%^&*<>?~-+/=',
+    numbers = '1234567890'
 
 
 
@@ -40,19 +40,31 @@ function generatePassword() {
   }
   // Create an empty array to hold user requested characters
   var myFinalArrOfChar = ''
-  //TODO: Create multiple if statements that checks if the user said yes or no to different confirms that we asked them, and based on their response, push those specific characters to our empty array
+  //TODO: Create multiple if statements that checks if the user said yes or no to different confirms that we asked them, and based on their response, !!push those specific characters to our empty array!!
   if (capsC === true) {
     //push all the special characters in the empty array
-    myFinalArrOfChar = myFinalArrOfChar + caps
+    myFinalArrOfChar += caps;
+    console.log ("caps used")
+  } else {
+    console.log ("caps not used")
   }
   if (lowerCaseC === true) {
-    myFinalArrOfChar = myFinalArrOfChar + lowerCase
+    myFinalArrOfChar += lowerCase;
+    console.log ("lowerCase used")
+  } else {
+    console.log ("lowerCase not used")
   }
   if (specCharC === true) {
-    myFinalArrOfChar = myFinalArrOfChar + specChar
+    myFinalArrOfChar += specChar;
+    console.log ("specChar used")
+  } else {
+    console.log ("specChar not used")
   }
   if (numbersC === true) {
-    myFinalArrOfChar = myFinalArrOfChar + numbers
+    myFinalArrOfChar += numbers;
+    console.log ("numbers used")
+  } else {
+    console.log ("numbers not used")
   }
   //TODO: Create a var to hold the final results
   var finalPass;
