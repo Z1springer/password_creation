@@ -7,3 +7,6 @@ link to repo: https://github.com/Z1springer/password_creation
 link to deployed application: https://z1springer.github.io/password_creation/
 
 ## screenshot
+
+
+![image](https://user-images.githubusercontent.com/74688904/101845119-b48c5080-3b02-11eb-82cb-758eddb04f31.png)
